@@ -1,4 +1,4 @@
-export const BASE_URL = "https://ante-api-project.onrender.com/";
+export const BASE_URL = "https://ante-media.netlify.app/";
 
 function replaceUrl(imageUrl) {
   imageUrl = imageUrl.replace(/\\/g, "/");
