@@ -9,7 +9,7 @@ function BlogDetail() {
   const { Id } = useParams();
   useEffect(() => {
     const getServicesDetails = () => {
-      fetch(`http://localhost:5000/api/blogs/${Id}`)
+      fetch(`https://ante-api-project.onrender.com/api/blogs/${Id}`)
         .then((res) => res.json())
         .then((blogDetData) => {
           console.log(blogDetData);

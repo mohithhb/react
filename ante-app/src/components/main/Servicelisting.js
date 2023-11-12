@@ -19,7 +19,7 @@ function ServiceListing() {
 
   useEffect(() => {
     const getServices = () => {
-      fetch("http://localhost:5000/api/services")
+      fetch("https://ante-api-project.onrender.com/api/services")
         .then((res) => res.json())
         .then((servData) => {
           setService(imageCorrection(servData));

@@ -6,7 +6,7 @@ function Clientele() {
 
   useEffect(() => {
     const getClient = () => {
-      fetch("http://localhost:5000/api/clientele")
+      fetch("https://ante-api-project.onrender.com/api/clientele")
         .then((res) => res.json())
         .then((clientData) => {
           getClients(imageCorrection(clientData));

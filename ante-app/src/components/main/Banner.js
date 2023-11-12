@@ -10,7 +10,7 @@ function Banner({ title, image }) {
     setUrl(currUrl);
   }, []);
 
-  const bannerUrl = "http://localhost:5000/api/banner";
+  const bannerUrl = "https://ante-api-project.onrender.com/api/banner";
   const options = { method: "GET", headers: { accept: "application/json" } };
 
   useEffect(() => {

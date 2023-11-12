@@ -10,7 +10,7 @@ function Services() {
   const { Id } = useParams();
   useEffect(() => {
     const getServicesDetails = () => {
-      fetch(`http://localhost:5000/api/services/${Id}`)
+      fetch(`https://ante-api-project.onrender.com/api/services/${Id}`)
         .then((res) => res.json())
         .then((servData) => {
           console.log(servData);

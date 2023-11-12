@@ -19,7 +19,7 @@ function Bloglisting() {
 
   useEffect(() => {
     const blogsList = () => {
-      fetch("http://localhost:5000/api/blogs")
+      fetch("https://ante-api-project.onrender.com/api/blogs")
         .then((res) => res.json())
         .then((blogData) => {
           getBlogs(imageCorrection(blogData));
